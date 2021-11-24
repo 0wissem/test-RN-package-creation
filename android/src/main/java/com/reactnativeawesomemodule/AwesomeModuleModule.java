@@ -21,8 +21,6 @@ public class AwesomeModuleModule extends ReactContextBaseJavaModule {
     public String getName() {
         return NAME;
     }
-
-
     // Example method
     // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod

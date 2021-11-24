@@ -20,3 +20,11 @@ const AwesomeModule = NativeModules.AwesomeModule
 export function multiply(a: number, b: number): Promise<number> {
   return AwesomeModule.multiply(a, b);
 }
+
+const CalendarModule = NativeModules.CalendarModule;
+export function showToast(msg: string): Promise<void> {
+  return CalendarModule.showToast(msg);
+}
+export function getConst(): Promise<string> {
+  return CalendarModule.getConstants();
+}
